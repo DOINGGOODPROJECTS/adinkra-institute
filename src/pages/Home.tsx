@@ -1,10 +1,10 @@
 import BackgroundColor from "../components/BackgroundColor";
 import Topbar from "../components/Topbar";
-import About from "../containers/About";
-import Contact from "../containers/Contact";
+// import About from "../containers/About";
+// import Contact from "../containers/Contact";
 import Footer from "../containers/Footer";
 import Hero from "../containers/Hero";
-import Teams from "../containers/Teams";
+// import Teams from "../containers/Teams";
 import Achievers from "./Achievers";
 
 const Home = () => {
