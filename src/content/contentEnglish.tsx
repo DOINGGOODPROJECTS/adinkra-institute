@@ -1,8 +1,7 @@
-import Logo from '../components/Logo';
-import RichardPicture from '../assets/Richard.jpeg';
-import JeanPicture from '../assets/jean.jpeg';
-import AmyPicture from '../assets/amy.jpeg';
-import DevPicture from '../assets/dev.jpeg';
+
+import { useLocation } from 'react-router-dom';
+
+// const currentLocation = () => useLocation().pathname;
 
 const contentEnglish = {
   topBar: {
@@ -99,7 +98,7 @@ const contentEnglish = {
     ],
     contact: {
       name: 'Honorees',
-      link: 'https://www.adinkrainstitute.com/honorees',
+      link: useLocation().pathname + '/honorees',
     },
   },
   header: {
@@ -113,136 +112,7 @@ const contentEnglish = {
       link: '#about',
       tag: 'about',
     },
-  },
-  team: {
-    title: 'Our Team',
-    subTitle: 'Meet the dedicated team behind the initiative.',
-    members: [
-      {
-        name: 'Richard Seshie',
-        Subtitle: 'President',
-        linkedin: 'https://www.linkedin.com/in/richardseshie/',
-        Image: () => {
-          return (
-            <img
-              src={RichardPicture}
-              alt="Richard Seshie"
-              className="rounded-full w-32"
-            />
-          );
-        },
-      },
-      {
-        name: 'Jean Claude Gouesse',
-        linkedin: 'https://www.linkedin.com/in/jeanclaudegouesse/',
-        Subtitle: 'Vice President',
-        Image: () => {
-          return (
-            <img
-              src={JeanPicture}
-              alt="Jean Claude Gouesse"
-              className="rounded-full w-32"
-            />
-          );
-        },
-      },
-      {
-        name: 'Aminata Toure',
-        linkedin: 'https://www.linkedin.com/in/aminata-toure-41a2a025a/',
-        Subtitle: 'Project Manager',
-        Image: () => {
-          return (
-            <img
-              src={AmyPicture}
-              alt="Aminata Toure"
-              className="rounded-full w-32 h-32"
-            />
-          );
-        },
-      },
-      {
-        name: 'Sylla Ibrahim',
-        linkedin: 'https://www.linkedin.com/in/brahimcode',
-        Subtitle: 'IT Manager',
-        Image: () => {
-          return (
-            <img
-              src={DevPicture}
-              alt="Sylla Ibrahim"
-              className="rounded-full w-32 h-32"
-            />
-          );
-        },
-      },
-    ],
-  },
-  about: {
-    title: 'About us',
-    subTitle: 'About Adinkra Distinguished Black Achievers Honors',
-    content:
-      'The Adinkra Distinguished Black Achievers Honors is a prestigious recognition program by the Adinkra Alliance Institute, aimed at celebrating individuals who have shown outstanding leadership and made a lasting impact in their communities. Our mission is to honor and uplift the unsung Black heroes creating positive change across the United States.',
-    organization: {
-      title: 'Our Organization',
-      subTitle: 'Adinkra Alliance Institute',
-      content:
-        ' is a 501(c)3 non-profit organization dedicated to improving the lives of Black communities and minority groups and championing initiatives for development, environmental justice, and equity in the United States and globally.',
-      sections: [
-        {
-          title: '',
-          content:
-            'To recognize and support outstanding Black leaders who contribute significantly to their communities.',
-          Logo: () => <Logo small />,
-        },
-        {
-          title: '',
-          content:
-            'To inspire and empower individuals by highlighting exemplary role models and their achievements.',
-          Logo: () => <Logo small />,
-        },
-      ],
-    },
-  },
-  contact: {
-    title: 'Get in Touch',
-    content:
-      "We'd love to connect with you! Whether you have questions or are interested in collaborating, don’t hesitate to get in touch.",
-    form: {
-      title: 'Contact Us',
-    },
-    list: [
-      {
-        name: 'team@adinkrafellowship.com',
-        Logo: () => (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-4"
-          >
-            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
-            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
-          </svg>
-        ),
-      },
-      {
-        name: '8 the Green Suite G Dover, DE 19901-3618 United States',
-        Logo: () => (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="size-4"
-          >
-            <path
-              fillRule="evenodd"
-              d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        ),
-      },
-    ],
-  },
+  }
 };
 
 export default contentEnglish;
