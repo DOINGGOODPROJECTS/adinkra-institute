@@ -14,10 +14,10 @@ const Home = () => {
         {window.location.pathname === "/" ? (
           <>
             <Hero />
-            <About />
+            {/* <About />
             <Teams />
-            {/* <Press /> */}
-            <Contact />
+            <Press />
+            <Contact /> */}
           </>
         ) : (
           <>
