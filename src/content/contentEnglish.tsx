@@ -99,7 +99,7 @@ const contentEnglish = {
     ],
     contact: {
       name: 'Honorees',
-      link: 'honorees',
+      link: 'https://www.adinkrainstitute.com/honorees',
     },
   },
   header: {
