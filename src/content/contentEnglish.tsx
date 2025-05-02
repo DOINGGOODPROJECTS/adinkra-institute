@@ -10,7 +10,7 @@ const contentEnglish = {
     navItems: [
       {
         name: 'Home',
-        link: '/#home',
+        link: 'https://www.adinkrainstitute.com/#hero',
         tag: 'home',
         Logo: () => {
           return (
@@ -53,30 +53,8 @@ const contentEnglish = {
         },
       },
       {
-        name: 'Team',
-        link: '/#team',
-        tag: 'team',
-        Logo: () => {
-          return (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="
-             t size-3"
-            >
-              <path
-                fillRule="evenodd"
-                d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          );
-        },
-      },
-      {
         name: 'About Us',
-        link: '/#about',
+        link: 'https://www.adinkrainstitute.com/#about',
         tag: 'about',
         Logo: () => {
           return (
@@ -97,8 +75,8 @@ const contentEnglish = {
         },
       },
       {
-        name: 'Press',
-        link: '#press',
+        name: 'Programs',
+        link: 'https://www.adinkrainstitute.com/#programs',
         tag: 'press',
         Logo: () => {
           return (
@@ -119,8 +97,8 @@ const contentEnglish = {
         },
       },
       {
-        name: 'Contact Us',
-        link: '/#contact',
+        name: 'Contact',
+        link: 'https://www.adinkrainstitute.com/#contact',
         tag: 'contact',
         Logo: () => {
           return (
@@ -142,8 +120,8 @@ const contentEnglish = {
       },
     ],
     contact: {
-      name: 'Get in Touch',
-      link: '#contact',
+      name: 'Honorees',
+      link: 'honorees',
     },
   },
   header: {
