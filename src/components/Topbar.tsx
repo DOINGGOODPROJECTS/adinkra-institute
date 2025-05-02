@@ -39,6 +39,7 @@ const Topbar = () => {
             <div className="" key={navItem.name}>
               <a
                 href={navItem.link}
+                target="_parent"
                 className="text-sm font-semibold leading-6 text-gray-900 flex justify-start items-center"
               >
                 {/* <navItem.Logo /> */}
@@ -51,6 +52,7 @@ const Topbar = () => {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href={contact.link}
+            target="_parent"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             <Button size="sm" className="bg-primary">
@@ -69,8 +71,7 @@ const Topbar = () => {
           <div className="flex items-center justify-between">
             <a
               href={navItems.find((item) => item.tag.includes("home"))?.link}
-              className="-m-1.5 p-1.5"
-            >
+              className="-m-1.5 p-1.5">
               <Logo />
             </a>
             <button
@@ -93,6 +94,7 @@ const Topbar = () => {
                     {/* <navItem.Logo /> */}
                     <a
                       href={navItem.link}
+                      target="_parent"
                       onClick={() => setMobileMenuOpen(false)}
                       className="text-sm font-semibold leading-6 text-gray-900 hover:underline transition-all"
                     >
